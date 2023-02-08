@@ -73,4 +73,15 @@ def RetirerCompte(idCompte):
 
 #RetirerCompte('3')
 
-echo = "test conflit"
+def verserment():
+    fichierrrrrrrr = open(r"//home//user//PycharmProjects//gestionCompteBancaire//compte.txt", "a")
+    idProprietaire = input("Saisir l'id propriétaire : ")
+    VER = input("Saisir le montant du versement : ")
+    for ligne in fichier:
+        L = ligne.split(";")
+        if L[1].strip() == idProprietaire:
+            L[2] = int(VER) + int(L[2])
+            fichier.write(L[2])
+    fichier.close()
+
+#verserment()
