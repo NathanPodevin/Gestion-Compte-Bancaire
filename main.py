@@ -1,7 +1,9 @@
 from datetime import datetime
 import uuid
 import os
+import logging
 
+logging.info('Projet gestion de comptes bancaires')
 
 def DernierCompte():
     fichier = open(r"//home//user//PycharmProjects//gestionCompteBancaire//compte.txt", "r")
